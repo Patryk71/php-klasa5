@@ -1,1 +1,29 @@
 
+<?php
+$today = date("F j, Y,g:i a");
+echo $today;
+echo "<br>";
+$today = date("m.d.y");
+echo $today;
+echo "<br>";
+$today = date("j, n, Y");
+echo $today;
+echo "<br>";
+$today = date("YMD");
+echo $today;
+echo "<br>";
+$today = date("h-i-s, j-m-y, it is w Day z ");
+echo $today;
+echo "<br>";
+$today = date('\i\t \i\s \t\h\e jS \d\a\y.');
+echo $today;
+echo "<br>";
+$today = date("D M j G:i:s T Y");
+echo $today;
+echo "<br>";
+$today = date('H:m:s \m \t\o \m\i\e\s\i\a\c');
+echo $today;
+echo "<br>";
+$today = date("H:i:s");
+echo $today;
+echo "<br>";
