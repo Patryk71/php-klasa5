@@ -1,4 +1,3 @@
-
 <?php
 $today = date("F j, Y,g:i a");
 echo $today;
@@ -27,3 +26,10 @@ echo "<br>";
 $today = date("H:i:s");
 echo $today;
 echo "<br>";
+$dzien = date('d');
+$dzien_tyg = date('l');
+$miesiac = date('n');
+$rok = date('Y');
+$miesiac_pl = array(1 => 'stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia');
+$dzien_tyg_pl = array('Monday' => 'Poniedziałek','Tuesday' => 'Wtorek','Wednesday' => 'Środa','Thursday' => 'Czwartek','Friday' => 'Piątek','Saturday' => 'Sobota','Sunday' => 'Niedziela');
+echo $dzien_tyg_pl[$dzien_tyg].",".$dzien." ".$miesiac_pl[$miesiac]." ".$rok."r.";
