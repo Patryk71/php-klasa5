@@ -33,3 +33,16 @@ $rok = date('Y');
 $miesiac_pl = array(1 => 'stycznia','lutego','marca','kwietnia','maja','czerwca','lipca','sierpnia','września','października','listopada','grudnia');
 $dzien_tyg_pl = array('Monday' => 'Poniedziałek','Tuesday' => 'Wtorek','Wednesday' => 'Środa','Thursday' => 'Czwartek','Friday' => 'Piątek','Saturday' => 'Sobota','Sunday' => 'Niedziela');
 echo $dzien_tyg_pl[$dzien_tyg].",".$dzien." ".$miesiac_pl[$miesiac]." ".$rok."r.";
+echo "<br><br>";
+echo date((mktime(0,0,0,'09','01','2026')-time())/60/60/24*-1);
+echo "<br><br>";
+echo "zadanie z urodzinami: <br>";
+//dzien tygodnia w którym sie urodziłeś/ na podstawie podania daty urodzenia niech wypluje w odp ile mineło dni i miesięcy, rok 2026 podaj dzien i miesiacuropdzenia i program mówi że od twoich urodzin mineło ileś dni jezeli przed to do twoich urodzin pozostało
+$urodziny = date(mktime(0,0,0,'2','12','2007'));
+echo "urodziłeś sie w ".$dzien_tyg_pl[date('l', $urodziny)];
+echo "<br>";
+if((date('m',$urodziny)-date('m'))<0){
+    echo "od twoich narodzin mięło: ".((date('m',$urodziny)-date('m'))*-1)." miesięcy i ".((date('d',$urodziny)-date('d')));
+}else{
+    echo "od twoich narodzin mięło: ".((date('m',$urodziny)-date('m'))*-1)." miesięcy i ".((date('d',$urodziny)-date('d')));
+};
